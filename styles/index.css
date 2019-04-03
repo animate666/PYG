@@ -1,3 +1,4 @@
+/* 引入初始化样式文件 */
 html,
 body,
 div,
@@ -91,23 +92,26 @@ ol,
 ul {
   list-style: none;
 }
+/* 全局样式 */
 .layout {
   width: 100vw;
+  max-width: 720px;
   height: 100vh;
-  max-width: 640px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: #eee;
 }
+/* 头部搜索框 */
 .pyg_header {
   height: 45px;
-  background-color: #eee;
   padding: 4px;
 }
+/* 主体部分 */
 .pyg_content {
-  background-color: #0f0;
   flex: 1;
+  background-color: #0f0;
 }
+/* 底部分栏 */
 .pyg_footer {
   height: 45px;
   background-color: #00f;

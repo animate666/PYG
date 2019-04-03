@@ -1,23 +1,28 @@
+/* 引入初始化样式文件 */
 @import './reset.less';
 
-.layout{
+/* 全局样式 */
+.layout {
     width: 100vw;
+    max-width: 720px;
     height: 100vh;
-    max-width: 640px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-}
-.pyg_header{
-    height: 45px;
     background-color: #eee;
+}
+/* 头部搜索框 */
+.pyg_header {
+    height: 45px;
     padding: 4px;
+    // background-color: #f00;
 }
-.pyg_content{
-    background-color: #0f0;
+/* 主体部分 */
+.pyg_content {
     flex: 1;
+    background-color: #0f0;
 }
-.pyg_footer{
+/* 底部分栏 */
+.pyg_footer {
     height: 45px;
     background-color: #00f;
 }
