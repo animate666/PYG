@@ -1,9 +1,10 @@
-/* 轮播图 */
-$(function () {
 
+
+$(function () {
+    /* 轮播图 */
     $.ajax({
         type: 'get',
-        url: 'http://157.122.54.189:9094/api/public/v1/home/swiperdata',
+        url: 'home/swiperdata',
         datatype: 'json',
         success: function (result) {
             // console.log(result);
@@ -19,4 +20,21 @@ $(function () {
             });
         }
     })
+
+    /* 商品列表 */
+    $.ajax({
+        type:'get',
+        url:'home/goodslist',
+        datatype:'json',
+        success:function(result){
+            // console.log(result);
+            if(result.meta.status == 200) {
+                var html = template('goodsTemp',result)
+                $('.pyg_goods').html(html)
+            }
+        }
+    })
+
+
+
 })
