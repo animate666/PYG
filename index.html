@@ -108,7 +108,7 @@
     <script type="text/template" id="goodsTemp">
         {{each data value index}}
         <div class="allGoods clearfix">
-            <img src="javascript:;" alt="">
+            <img src="{{value.group_img}}" alt="">
             {{each value.goods value1 inndex1}}
             <div class="sGoods">
                 <a href="{{value1.goods_id}}">

@@ -1,7 +1,13 @@
-
-
 $(function () {
-    /* 轮播图 */
+    slider()
+    goods()
+
+})
+
+
+
+/* 轮播图 */
+function slider() {
     $.ajax({
         type: 'get',
         url: 'home/swiperdata',
@@ -20,21 +26,21 @@ $(function () {
             });
         }
     })
+}
 
-    /* 商品列表 */
+
+/* 商品列表 */
+function goods() {
     $.ajax({
-        type:'get',
-        url:'home/goodslist',
-        datatype:'json',
-        success:function(result){
+        type: 'get',
+        url: 'home/goodslist',
+        datatype: 'json',
+        success: function (result) {
             // console.log(result);
-            if(result.meta.status == 200) {
-                var html = template('goodsTemp',result)
+            if (result.meta.status == 200) {
+                var html = template('goodsTemp', result)
                 $('.pyg_goods').html(html)
             }
         }
     })
-
-
-
-})
+}
