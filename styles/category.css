@@ -1,0 +1,194 @@
+/* 初始化 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+/* 全局样式 */
+.layout {
+  width: 100vw;
+  max-width: 720px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+/* 头部搜索框 */
+.pyg_header {
+  height: 50px;
+  padding: 4px;
+  background-color: #eee;
+}
+/* 底部选项卡 */
+.pyg_footer {
+  height: 50px;
+}
+/* 分栏页 */
+.pyg_category {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+}
+/* 左侧 */
+.pyg_left {
+  width: 100px;
+  height: 100%;
+  background-color: #eee;
+}
+.pyg_left ul li {
+  width: 100%;
+  height: 50px;
+}
+.pyg_left ul li > a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+}
+.pyg_left ul li.active > a {
+  background-color: #fff;
+  border-right: none;
+  color: #f00;
+}
+/* 右侧 */
+.pyg_right {
+  flex: 1;
+  background-color: #fff;
+}
+.pyg_right .pyg_lists {
+  padding-bottom: 20px;
+}
+.pyg_right .pyg_lists .pyg_list {
+  width: 100%;
+}
+.pyg_right .pyg_lists .pyg_list .title {
+  width: 100%;
+  line-height: 30px;
+  margin-top: 10px;
+  text-indent: 1em;
+  color: #000;
+  font-size: 16px;
+}
+.pyg_right .pyg_lists .pyg_list .goodsList {
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pyg_right .pyg_lists .pyg_list .goodsList a {
+  display: block;
+  width: 33.33%;
+  text-align: center;
+}
+.pyg_right .pyg_lists .pyg_list .goodsList a img {
+  width: 70%;
+}
+.pyg_right .pyg_lists .pyg_list .goodsList a span {
+  display: block;
+  color: #888;
+  font-size: 12px;
+}

@@ -118,6 +118,10 @@ ul {
   padding: 4px;
   background-color: #eee;
 }
+/* 底部选项卡 */
+.pyg_footer {
+  height: 45px;
+}
 /* 主体部分 */
 .pyg_content {
   flex: 1;
